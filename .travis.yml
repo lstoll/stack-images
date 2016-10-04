@@ -1,0 +1,4 @@
+---
+sudo: required
+dist: trusty
+script: sudo bin/build-stack "14.0.${TRAVIS_BUILD_NUMBER}" bin/cedar-14.sh && sudo bin/capture-stack "14.0.${TRAVIS_BUILD_NUMBER}"
